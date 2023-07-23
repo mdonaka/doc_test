@@ -9,16 +9,20 @@
 import os
 import sys
 
-import packages
+sys.path.insert(0, os.path.abspath('../../packages'))
 
-sys.path.insert(0, os.path.abspath('../../'))
+
+def v():
+    from packages.version import __version__
+    return __version__
+
 
 project = 'doc_test'
 copyright = '2023, ore'
 author = 'ore'
 
-version = packages.version.__version__
-version = packages.version.__version__
+version = v()
+release = v()
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
