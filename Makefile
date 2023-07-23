@@ -1,6 +1,6 @@
 .PHONY: genapi
 genapi:
-	sphinx-apidoc -f -o docs/source/reference packages
+	sphinx-apidoc -e -f -T -o docs/source/reference packages
 
 .PHONY: build
 build: genapi

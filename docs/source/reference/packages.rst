@@ -4,29 +4,12 @@ packages package
 Submodules
 ----------
 
-packages.api module
--------------------
+.. toctree::
+   :maxdepth: 4
 
-.. automodule:: packages.api
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-packages.doc module
--------------------
-
-.. automodule:: packages.doc
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-packages.version module
------------------------
-
-.. automodule:: packages.version
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   packages.api
+   packages.doc
+   packages.version
 
 Module contents
 ---------------
