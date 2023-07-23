@@ -9,7 +9,7 @@
 import os
 import sys
 
-from packages.version import __version__
+import packages
 
 sys.path.insert(0, os.path.abspath('../../'))
 
@@ -17,8 +17,8 @@ project = 'doc_test'
 copyright = '2023, ore'
 author = 'ore'
 
-version = __version__
-version = __version__
+version = packages.version.__version__
+version = packages.version.__version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
