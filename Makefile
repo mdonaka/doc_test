@@ -1,7 +1,7 @@
 .PHONY: genapi
 genapi:
-	sphinx-apidoc -f -o docs_src/source/reference packages
+	sphinx-apidoc -f -o docs/source/reference packages
 
 .PHONY: build
 build: genapi
-	sphinx-autobuild docs_src/source docs_src/_build/html
+	sphinx-autobuild docs/source docs_src/_build/html
