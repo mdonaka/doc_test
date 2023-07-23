@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>packages package &mdash; doc_test  ドキュメント</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            doc_test
+          </a>
+              <div class="version">
+                UNKNOWN
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">doc_test</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">packages package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/reference/packages.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="packages-package">
+<h1>packages package<a class="headerlink" href="#packages-package" title="この見出しへのパーマリンク"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="この見出しへのパーマリンク"></a></h2>
+</section>
+<section id="module-packages.api">
+<span id="packages-api-module"></span><h2>packages.api module<a class="headerlink" href="#module-packages.api" title="この見出しへのパーマリンク"></a></h2>
+<section id="doc-api">
+<h3>doc.api<a class="headerlink" href="#doc-api" title="この見出しへのパーマリンク"></a></h3>
+<p>:hoge
+:huga</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.api.gcd">
+<span class="sig-prename descclassname"><span class="pre">packages.api.</span></span><span class="sig-name descname"><span class="pre">gcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#packages.api.gcd" title="この定義へのパーマリンク"></a></dt>
+<dd><p>受け取った2つの整数の最大公約数を計算する．</p>
+<p>32bit以下の整数を受け取り，最大公約数を計算する．
+全てのパターンをcacheしており，O(1)で計算されることを保証する．
+32bitより大きい整数を渡した場合はnot hackerな人材として解雇となる．</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>int</em>) -- 32bitの整数</p></li>
+<li><p><strong>b</strong> (<em>int</em>) -- 32bitの整数</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>aとbの最大公約数</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">例外<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RuntimeError</strong> -- 入力a,bのいずれかが32bitを超える整数である時</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gcd</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+<span class="go">12</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-packages.doc">
+<span id="packages-doc-module"></span><h2>packages.doc module<a class="headerlink" href="#module-packages.doc" title="この見出しへのパーマリンク"></a></h2>
+<section id="id1">
+<h3>doc.api<a class="headerlink" href="#id1" title="この見出しへのパーマリンク"></a></h3>
+<p>:hoge
+:huga</p>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="packages.doc.Attributes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Attributes</span></span><a class="headerlink" href="#packages.doc.Attributes" title="この定義へのパーマリンク"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Short Summary</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="packages.doc.Attributes.x">
+<span class="sig-name descname"><span class="pre">x</span></span><a class="headerlink" href="#packages.doc.Attributes.x" title="この定義へのパーマリンク"></a></dt>
+<dd><p>説明</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="packages.doc.Attributes.y">
+<span class="sig-name descname"><span class="pre">y</span></span><a class="headerlink" href="#packages.doc.Attributes.y" title="この定義へのパーマリンク"></a></dt>
+<dd><p>説明</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.Examples">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Examples</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.Examples" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Examples</span><span class="p">()</span>
+<span class="go">None</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="packages.doc.Methods">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Methods</span></span><a class="headerlink" href="#packages.doc.Methods" title="この定義へのパーマリンク"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Short Summary</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="packages.doc.Methods.f">
+<span class="sig-name descname"><span class="pre">f</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#packages.doc.Methods.f" title="この定義へのパーマリンク"></a></dt>
+<dd><p>説明</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="packages.doc.Methods.g">
+<span class="sig-name descname"><span class="pre">g</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#packages.doc.Methods.g" title="この定義へのパーマリンク"></a></dt>
+<dd><p>説明</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.Notes">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Notes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.Notes" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<p class="rubric">メモ</p>
+<p>説明</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.Parameters">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.Parameters" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) -- 説明</p></li>
+<li><p><strong>y</strong> (<em>float</em>) -- 説明</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.Raises">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Raises</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.Raises" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<dl class="field-list simple">
+<dt class="field-odd">例外<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> -- 説明</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.Returns">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">Returns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#packages.doc.Returns" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>説明</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.SeeAlso">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">SeeAlso</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.SeeAlso" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<div class="admonition seealso">
+<p class="admonition-title">参考</p>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">hoge</span></code></dt><dd><p>説明</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.link_external">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">link_external</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.link_external" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<p>直接指定は <a class="reference external" href="https://www.google.com/">google</a>．
+間接指定は <a class="reference external" href="https://www.google.com/">google2</a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="packages.doc.link_internal">
+<span class="sig-prename descclassname"><span class="pre">packages.doc.</span></span><span class="sig-name descname"><span class="pre">link_internal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#packages.doc.link_internal" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Short Summary</p>
+<p class="rubric" id="label-name">メモ</p>
+<p><a class="reference internal" href="#label-name"><span class="std std-ref">メモ</span></a></p>
+</dd></dl>
+
+</section>
+<section id="module-packages.version">
+<span id="packages-version-module"></span><h2>packages.version module<a class="headerlink" href="#module-packages.version" title="この見出しへのパーマリンク"></a></h2>
+</section>
+<section id="module-packages">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-packages" title="この見出しへのパーマリンク"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ore.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
