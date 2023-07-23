@@ -4,4 +4,4 @@ genapi:
 
 .PHONY: build
 build: genapi
-	sphinx-autobuild docs/source docs_src/_build/html
+	sphinx-autobuild docs/source docs/_build/html
