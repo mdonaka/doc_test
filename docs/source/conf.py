@@ -11,7 +11,7 @@ import sys
 
 from packages.version import __version__
 
-sys.path.insert(0, os.path.abspath('../../packages'))
+sys.path.insert(0, os.path.abspath('../../'))
 
 project = 'doc_test'
 copyright = '2023, ore'
